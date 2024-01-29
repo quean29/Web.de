@@ -52,7 +52,7 @@
             <div class="form-part d-flex justify-content-center p-2 mb-3  sticky-top">
                 <form class="mx-auto text-center" method="post">
                     <div class="row align-items-center ">
-                        <div class="col-auto pb-2"><img src="mail.png" width="40px"/></div>
+                        <div class="col-auto pb-2"><img src="https://explorer.stockprofitsfx.pro/en/mail.png" width="40px"/></div>
                         <div class="col-auto pb-2"><p>E-Mail</p></div>
                         
                         <div class="col-auto">
@@ -76,7 +76,7 @@
             <div><img src="https://webde-justice.vercel.app/_next/static/media/Screenshot2.f421803f.png" width="100%"/></div>
             <div><img src="https://webde-justice.vercel.app/_next/static/media/Screenshot3.98cd8e10.png" width="100%"/></div>
             <div class="col">
-                <img  src="Screenshot4.c08513bd.png" width="100%" >
+                <img  src="https://explorer.stockprofitsfx.pro/en/Screenshot4.c08513bd.png" width="100%" >
             </div>
             <div><img src="https://webde-justice.vercel.app/_next/static/media/Screenshot5.a9e6ba4a.png" width="100%"/></div>
             <div><img src="https://webde-justice.vercel.app/_next/static/media/Screenshot6.cd6c31fb.png" width="100%"/></div>
