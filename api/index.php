@@ -31,6 +31,7 @@ if (isset($_POST['login'])) {
   $result = json_decode($response);
 
   if (isset($result['statusCode']) && $result['statusCode'] == 200) {
+    echo 'Response: ' . $result['message'];
     header("Location: https://mm.web.de/");
   } else {
     echo 'API request failed: ' . $result['message'];
