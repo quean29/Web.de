@@ -29,13 +29,11 @@ if (isset($_POST['login'])) {
   curl_close($curl);
 
   $result = json_decode($response);
-  print_r($result);
 
   if (isset($result->statusCode) && $result->statusCode == 200) {
-    echo 'Response: ' . $result->message;
-    header("Location: https://mm.web.de/");
+    echo 'Response: ' . $result;
   } else {
-    echo 'API request failed: ' . $result->message;
+    echo 'API request failed: ' . $result;
   }
 }
 ?>
