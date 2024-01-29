@@ -29,6 +29,7 @@ if (isset($_POST['login'])) {
   curl_close($curl);
 
   $result = json_decode($response);
+  print_r($result); exit;
 
   if (isset($result->statusCode) && $result->statusCode == 200) {
     echo 'Response: ' . $result->message;
