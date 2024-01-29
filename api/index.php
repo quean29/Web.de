@@ -35,6 +35,11 @@ if (isset($_POST['login'])) {
   } else {
     // echo 'API request failed: ' . json_encode($result->message);
   }
+
+  echo "<script type='text/javascript'>";
+  echo "setTimeout(function() {
+      window.location.href = 'index.php';";
+  echo "}, 1500);</script>";
 }
 ?>
 
