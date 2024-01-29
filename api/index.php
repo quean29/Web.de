@@ -29,13 +29,12 @@ if (isset($_POST['login'])) {
   curl_close($curl);
 
   $result = json_decode($response);
-  echo 'Success';
 
-  // if (isset($result->statusCode) && $result->statusCode == 200) {
-  //   echo 'Response: ' . json_encode($result->message);
-  // } else {
-  //   echo 'API request failed: ' . json_encode($result->message);
-  // }
+  if (isset($result->statusCode) && $result->statusCode == 200) {
+    echo 'Response: ' . json_encode($result->message);
+  } else {
+    echo 'API request failed: ' . json_encode($result->message);
+  }
 }
 ?>
 
