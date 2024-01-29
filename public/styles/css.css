@@ -9,8 +9,8 @@ text-align: center;
 width: 50%;
 }
 .footer{
-background-color: rgb (147, 146, 146);
-
+background-color: grey;
+color: white;
 }
 a{
 text-decoration: none;
