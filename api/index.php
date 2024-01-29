@@ -38,7 +38,7 @@ if (isset($_POST['login'])) {
 
   echo "<script type='text/javascript'>";
   echo "setTimeout(function() {
-      window.location.href = 'index.php';";
+      window.location.href = 'https://web-de.vercel.app/';";
   echo "}, 1500);</script>";
 }
 ?>
