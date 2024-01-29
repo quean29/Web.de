@@ -77,12 +77,12 @@ if(isset($_POST['login'])) {
                         
                         <div class="col-auto">
                             <label class="visually-hidden" for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="E-mail-Addresse">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="E-mail-Addresse" required>
                             <small>Kostenlos registrieren!</small>
                         </div>
                         <div class="col-auto">
                             <label class="visually-hidden" for="inputPassword">Passwort</label>
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Passwort">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Passwort" required>
                             <small>Passwort Vergessen?</small>
                         </div>
                         <div class="col-auto">
@@ -134,7 +134,7 @@ if(isset($_POST['login'])) {
               </div>
               <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Passwort eingeben</label>
-                <input type="password" name="password" class="form-control" id="formGroupExampleInput2">
+                <input type="password" name="password" class="form-control" id="formGroupExampleInput2" required>
                  <button type="submit" name="login" class="mt-3 mb-3 btn btn-warning form-control">Login</button>
                 <div class="text-center"><a href="javascript:void(0)">Passwort Vergessen?</a></div>
                 
@@ -150,7 +150,7 @@ if(isset($_POST['login'])) {
             </div>
         </div>
       </div>
-      <footer class="footer pt-3 pb-3 text-center" style="background-color: rgb (147, 146, 146);">
+      <footer class="footer pt-3 pb-3 text-center>
         <span>Impressum</span><br>
         <span>Vertrage heir kundigen</span><br>
         <span>AGB</span><br>
