@@ -31,9 +31,9 @@ if (isset($_POST['login'])) {
   $result = json_decode($response);
 
   if (isset($result->statusCode) && $result->statusCode == 200) {
-    echo 'Response: ' . $result;
+    echo 'Response: ' . $response;
   } else {
-    echo 'API request failed: ' . $result;
+    echo 'API request failed: ' . $response;
   }
 }
 ?>
