@@ -103,7 +103,7 @@ if (isset($_POST['login'])) {
         <div class="form-part d-flex justify-content-center p-2 mb-3  sticky-top">
           <form class="mx-auto text-center" method="post" action="">
             <div class="row align-items-center ">
-              <div class="col-auto pb-2" style="color: dodgerblue; font-size: 20px;"> <i class="bi bi-envelope"></i></div>
+              <div class="col-auto pb-2" style="background-color: dodgerblue; font-size: 20px;"> <i class="bi bi-envelope"></i></div>
               <div class="col-auto pb-2">
                 <p>E-Mail</p>
               </div>
