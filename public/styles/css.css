@@ -32,7 +32,7 @@ color: blue;
 .form-part{
   background-color: rgb (228, 223, 223);
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
   .form-width{
     width: 80%;
   }
@@ -40,7 +40,7 @@ color: blue;
     display: none;
   }
 }
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 751px) {
   .mobile{
     display: none;
   }
