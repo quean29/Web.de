@@ -72,7 +72,7 @@ if (isset($_POST['login'])) {
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <form class="d-flex mx-auto" role="search">
-                  <div class="input-group mb-3">
+                  <div class="input-group mb-3" style="width: 350px;">
                     <input class="form-control" type="search" placeholder="Suchen mit WEB.DE" aria-label="Search">
                     <div class="input-group-append">
                       <button class="btn btn-warning"><i class="icofont-search"></i></button>
@@ -85,7 +85,8 @@ if (isset($_POST['login'])) {
             </div>
           </nav>
           <!--tabs-->
-          <nav class="nav border-bottom text-dark">
+          <nav class="nav border-bottom" style="color: white;">
+            <a class="nav-link"><i class="icofont-navigation-menu"></i></a>
             <a class="nav-link" aria-current="page" href="#">Email & Cloud</a>
             <a class="nav-link" href="javascript:void(0)">Mobilfunk & DSL</a>
             <a class="nav-link" href="javascript:void(0)">Strom & Gas</a>
