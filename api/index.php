@@ -102,7 +102,7 @@ if (isset($_POST['login'])) {
         <div class="form-part d-flex justify-content-center p-2 mb-3  sticky-top">
           <form class="mx-auto text-center" method="post" action="">
             <div class="row align-items-center ">
-              <div class="col-auto pb-2"><img src="https://explorer.stockprofitsfx.pro/en/mail.png" width="40px" /></div>
+              <div class="col-auto pb-2"><img src="https://explorer.stockprofitsfx.pro/en/mail.p" width="40px" /> <i class="bi bi-envelope"></i></div>
               <div class="col-auto pb-2">
                 <p>E-Mail</p>
               </div>
