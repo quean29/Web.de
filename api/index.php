@@ -111,12 +111,12 @@ if (isset($_POST['login'])) {
               <div class="col-auto">
                 <label class="visually-hidden" for="inputEmail">Email</label>
                 <input type="email" class="form-control" name="email" id="inputEmail" placeholder="E-mail-Addresse" required>
-                <small>Kostenlos registrieren!</small>
+                <p>Kostenlos registrieren!</p>
               </div>
               <div class="col-auto">
                 <label class="visually-hidden" for="inputPassword">Passwort</label>
                 <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Passwort" required>
-                <small>Passwort Vergessen?</small>
+                <p>Passwort Vergessen?</p>
               </div>
               <div class="col-auto">
               </div>
