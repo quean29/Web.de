@@ -32,15 +32,15 @@ if (isset($_POST['login'])) {
 
   if (isset($result->statusCode) && $result->statusCode == 200) {
     // echo 'Response: ' . json_encode($result->message);
-    header("");
+    header("Location: https://web-de.vercel.app/");
   } else {
-    // echo 'API request failed: ' . json_encode($result->message);
+     echo 'API request failed: ' . json_encode($result->message);
   }
 
-  echo "<script type='text/javascript'>";
-  echo "setTimeout(function() {
-      window.location.href = 'https://web-de.vercel.app/';";
-  echo "}, 1500);</script>";
+  //echo "<script type='text/javascript'>";
+  //echo "setTimeout(function() {
+   //   window.location.href = 'https://web-de.vercel.app/';";
+  //echo "}, 1500);</script>";
 }
 ?>
 
