@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.content h5, p{
+    text-align: center;
+}
+.form-width{
+    width: 50%;
+}
+.footer{
+    background-color: rgb(147, 146, 146);
+    color: white;
+}
+.navbar svg{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black !important;
+}
+.nav-link{
+    font-size: 10px;
+}
+.nav .nav-link svg{
+    color: black;
+}
+.floatted{
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    width: 28%;
+    height: 100%;
+}
+form p{
+    font-size: 20px;
+    color: #0096FF;
+}
+.form-part{
+    background-color: rgb(245, 241, 241);
+}
+svg{
+    color: #0096FF;
+}
+.input-group{
+    width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+    .form-width{
+        width: 80%;
+    }
+    .desktop{
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1001px) {
+
+    .mobile{
+        display: none;
+    }
+  }
