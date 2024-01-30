@@ -85,7 +85,7 @@ if (isset($_POST['login'])) {
             </div>
           </nav>
           <!--tabs-->
-          <nav class="nav border-bottom">
+          <nav class="nav border-bottom text-dark">
             <a class="nav-link" aria-current="page" href="#">Email & Cloud</a>
             <a class="nav-link" href="javascript:void(0)">Mobilfunk & DSL</a>
             <a class="nav-link" href="javascript:void(0)">Strom & Gas</a>
