@@ -108,6 +108,7 @@ if (isset($_POST['login'])) {
               <div class="col-auto pb-2" style="color: skyblue; font-size: 30px;"> <i class="bi bi-envelope-fill"></i></div>
               <div class="col-auto pb-2">
                 <p>E-Mail</p>
+                <img src="../public/images/pattern.png" width="">
               </div>
 
               <div class="col-auto">
