@@ -85,15 +85,15 @@ if (isset($_POST['login'])) {
             </div>
           </nav>
           <!--tabs-->
-          <nav class="nav border-bottom" style="color: white;">
-            <a class="nav-link"><i class="icofont-navigation-menu"></i></a>
-            <a class="nav-link" aria-current="page" href="#">Email & Cloud</a>
-            <a class="nav-link" href="javascript:void(0)">Mobilfunk & DSL</a>
-            <a class="nav-link" href="javascript:void(0)">Strom & Gas</a>
-            <a class="nav-link">Shop</a>
-            <a class="nav-link">Lotto</a>
-            <a class="nav-link">Versicherung</a>
-            <a class="nav-link"><img src="https://adimg.uimserv.net/otto/2021/210617/otto_logo_44x16-2.svg"></a>
+          <nav class="nav border-bottom">
+            <a class="nav-link" style="color: black;"><i class="icofont-navigation-menu"></i></a>
+            <a class="nav-link" aria-current="page" style="color: black;">Email & Cloud</a>
+            <a class="nav-link" href="javascript:void(0)" style="color: black;">Mobilfunk & DSL</a>
+            <a class="nav-link" href="javascript:void(0)" style="color: black;">Strom & Gas</a>
+            <a class="nav-link" style="color: black;">Shop</a>
+            <a class="nav-link" style="color: black;">Lotto</a>
+            <a class="nav-link" style="color: black;">Versicherung</a>
+            <a class="nav-link" style="padding-left: 5rem;"><img src="https://adimg.uimserv.net/otto/2021/210617/otto_logo_44x16-2.svg"></a>
             <a class="nav-link"><img src="https://adimg.uimserv.net/MONA/2021/Promoline_12461_mona-56x16-1.svg"></a>
             <a class="nav-link"><img src="https://adimg.uimserv.net/BaurVersand/210618/Promoline_baur-logo_56x16px-2.svg"></a>
           </nav>
