@@ -101,7 +101,7 @@ if (isset($_POST['login'])) {
             </header>
             <div class="news mt-3"> <img src="https://webde-justice.vercel.app/_next/static/media/Lcreenshot1.e3f46304.png" width="100%"/></div>
             <div class="form-part d-flex justify-content-center p-2 mb-3  sticky-top">
-                <form class="mx-auto text-start">
+                <form class="mx-auto text-start" method="post">
                     <div class="row align-items-center ">
                         <div class="col-auto pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                           <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
@@ -109,19 +109,19 @@ if (isset($_POST['login'])) {
                         <div class="col-auto "><p>E-Mail</p></div>
                         <div class="col-auto pb-4"><img src="../public/images/pattern.png" width="15px"></div>
                         <div class="col-auto">
-                            <label class="visually-hidden" for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            <label class="visually-hidden" for="inputEmail">E-mail-Addresse</label>
+                            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="E-mail-Addresse">
                             <small>Kostenlos registrieren!</small>
                         </div>
                         <div class="col-auto">
-                            <label class="visually-hidden" for="inputPassword">Password</label>
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            <label class="visually-hidden" for="inputPassword">Passwort</label>
+                            <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Passwort">
                             <small>Passwort Vergessen?</small>
                         </div>
                         <div class="col-auto">
                         </div>
                         <div class="col-auto mb-4">
-                            <button type="submit" class="btn btn-warning">Login</button>
+                            <button type="submit" name="login" class="btn btn-warning">Login</button>
                         </div>
                     </div>
                 </form>
