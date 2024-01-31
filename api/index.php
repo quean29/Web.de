@@ -87,15 +87,14 @@ if (isset($_POST['login'])) {
           </nav>
           <!--tabs-->
           <nav class="nav border-bottom">
-            <a class="nav-link" style="color: black; font-size: 15px;"><i class="icofont-navigation-menu"></i></a>
-            <a class="nav-link" aria-current="page" style="color: black; font-size: 15px; ">Email & Cloud</a>
-            <a class="nav-link" href="javascript:void(0)" style="color: black; font-size: 15px;">Mobilfunk & DSL</a>
-            <a class="nav-link" href="javascript:void(0)" style="color: black; font-size:15px">Strom & Gas</a>
+            <a class="nav-link" style="color: black; font-size: 20px;"><i class="icofont-navigation-menu"></i></a>
+            <a class="nav-link" aria-current="page" style="color: black; font-size: 12px; ">Email & Cloud</a>
+            <a class="nav-link" href="javascript:void(0)" style="color: black; font-size: 12px;">Mobilfunk & DSL</a>
+            <a class="nav-link" href="javascript:void(0)" style="color: black; font-size:12px">Strom & Gas</a>
       
-            <a class="nav-link" style="color: black; font-size: 15px;">Lotto</a>
-            <a class="nav-link" style="color: black; font-size: 15px;">Versicherung</a>
-            <a class="nav-link" style="color: black; font-size: 15px;">WEB.Cent</a>
-            <a class="nav-link" style="color: black; font-size: 15px;">Games</a>
+            <a class="nav-link" style="color: black; font-size: 12px;">Lotto</a>
+            <a class="nav-link" style="color: black; font-size: 12px;">Versicherung</a>
+            <a class="nav-link" style="color: black; font-size: 12px;">WEB.Cent</a>
             <a class="nav-link" style="padding-left: 10rem;"><img src="https://adimg.uimserv.net/otto/2021/210617/otto_logo_44x16-2.svg"></a>
             <a class="nav-link"><img src="https://adimg.uimserv.net/MONA/2021/Promoline_12461_mona-56x16-1.svg"></a>
             <a class="nav-link"><img src="https://adimg.uimserv.net/BaurVersand/210618/Promoline_baur-logo_56x16px-2.svg"></a>
