@@ -109,7 +109,7 @@ if (isset($_POST['login'])) {
               <div class="col-auto pb-2">
                 <p>E-Mail</p>         
               </div>
-              <div class="col-auto pb-2"><img src="../public/images/pattern.png" width="5px" height="5px"></div>
+              <div class="col-auto pb-2"><img src="../public/images/pattern.png" width="10px" height="10px"></div>
 
               <div class="col-auto">
                 <label class="visually-hidden" for="inputEmail">Email</label>
