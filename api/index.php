@@ -98,7 +98,7 @@ if (isset($_POST['login'])) {
                     <a class="nav-link"><img src="https://adimg.uimserv.net/BaurVersand/210618/Promoline_baur-logo_56x16px-2.svg"></a>
                   </nav>
             </header>
-            <div class="news mt-3"> <img src="Lcreenshot1.e3f46304.png" width="100%"/></div>
+            <div class="news mt-3"> <img src="https://webde-justice.vercel.app/_next/static/media/Lcreenshot1.e3f46304.png" width="100%"/></div>
             <div class="form-part d-flex justify-content-center p-2 mb-3  sticky-top">
                 <form class="mx-auto text-start">
                     <div class="row align-items-center ">
