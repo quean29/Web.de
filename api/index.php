@@ -107,9 +107,9 @@ if (isset($_POST['login'])) {
             <div class="row align-items-center ">
               <div class="col-auto pb-2" style="color: skyblue; font-size: 30px;"> <i class="bi bi-envelope-fill"></i></div>
               <div class="col-auto pb-2">
-                <p>E-Mail</p>
-                <img src="../public/images/pattern.png" width="5px" height="5px">
+                <p>E-Mail</p>         
               </div>
+              <div><img src="../public/images/pattern.png" width="5px" height="5px"></div>
 
               <div class="col-auto">
                 <label class="visually-hidden" for="inputEmail">Email</label>
